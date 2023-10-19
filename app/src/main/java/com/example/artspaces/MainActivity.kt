@@ -67,12 +67,19 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun Judul() {
     Column{
-        Text("Lukisan Monalisa", fontFamily = FontFamily.Serif, fontSize = 50.sp, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center,
-        )
-        Text("Hello World", fontFamily = FontFamily.Serif, fontSize = 50.sp, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center,
+        Text("Lukisan Monalisa",fontFamily = FontFamily.Serif, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center,
+            modifier = Modifier.padding(9.dp),
+            style = MaterialTheme.typography.headlineLarge,
+            )
+        Text("Klaten (2005)", fontFamily = FontFamily.Serif, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center,
+            modifier = Modifier.padding(9.dp),
+            style = MaterialTheme.typography.bodyLarge,
+            )
+        Text("Mega Ayu Lestari / 235411099", fontFamily = FontFamily.Serif, fontWeight = FontWeight.Bold, textAlign = TextAlign.Center,
+            modifier = Modifier.padding(9.dp),
+            style = MaterialTheme.typography.bodyLarge,
         )
     }
-
 }
 
 
